@@ -35,7 +35,7 @@ class NNet(nn.Module):
         return out
 
 model = NNet()
-model.load_state_dict(torch.load("mnist.pth"))
+model.load_state_dict(torch.load("app/mnist.pth"))
 model.eval()
 
 # Tranform image to normalized 28x28 grayscale 
